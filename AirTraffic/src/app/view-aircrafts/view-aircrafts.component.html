@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="table-responsive">
+
+    <!--Table-->
+    <table class="table">
+  
+      <!--Table head-->
+      <thead>
+        <tr>
+          <th>Aircraft ID</th>
+          <th>Type</th>
+          <th>Size</th>
+          <th>Priority</th>
+          <th>Stamp</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <!--Table head-->
+  
+      <!--Table body-->
+      <tbody>
+        <tr *ngFor="let aircraft of aircraftData;">
+          <td>{{aircraft.id}}</td>
+          <td>{{aircraft.type}}</td>
+          <td>{{aircraft.size}}</td>
+          <td>{{aircraft.priority}}</td>
+          <td>{{aircraft.doe}}</td>
+          <td><button class="btn btn-danger btn-block" type="submit"(click)="deleteAircraft()">Delete</button></td>
+        </tr>
+      </tbody>
+      <!--Table body-->
+  
+    </table>
+    <!--Table-->
+  
+  </div>
+</div>

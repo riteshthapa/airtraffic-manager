@@ -1,0 +1,42 @@
+<div class="container my-5 py-5 z-depth-1">
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-6">
+
+          <!-- Default form subscription -->
+          <form class="text-center" action="#!">
+
+            <p class="h4 mb-4">Air Traffic Controller</p>
+
+            <p>Add and remove aircrafts from the queue.</p>
+
+            <!-- type -->
+            <input  type="text" name="type" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Passenger or Cargo" [(ngModel)]="aircraft.type" required>
+
+            <!-- size -->
+            <input type="text" name="size" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="Small or Large" [(ngModel)]="aircraft.size" required>
+
+            <!-- Sign in button -->
+            <button class="btn btn-success btn-block" type="submit"(click)="addData()">Add</button>
+            <!-- <button class="btn btn-danger btn-block" type="submit"(click)="deleteQueue()">Remove</button> -->
+
+
+          </form>
+          <!-- Default form subscription -->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
